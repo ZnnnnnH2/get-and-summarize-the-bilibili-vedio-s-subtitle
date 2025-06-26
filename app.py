@@ -31,11 +31,11 @@ choice3 = int(input("need ai to summerize it? 1 for yes, 0 for no: "))
 
 
 def get_key():
-	with open('OPENAI_API_KEY', 'w+', encoding='utf-8') as f:
+	with open('OPENAI_API_KEY.txt', 'w+', encoding='utf-8') as f:
 		api_key = f.read().strip()
 		if not api_key:
 			api_key = input("输入您的 OpenAI API 密钥")
-			f.write('OPENAI_API_KEY')
+			f.write(api_key)
 	return api_key
 
 
@@ -51,5 +51,5 @@ if choice3 == 1:
 		],
 		stream=False
 	)
-	with open('summary.txt', 'w', encoding='utf-8') as f:
+	with open('summary.md', 'w', encoding='utf-8') as f:
 		f.write(response.choices[0].message.content)
