@@ -27,3 +27,8 @@ just run the app.py and follow the instructions in the terminal.
 
 - finally, the subtitle will be saved in `subtitle.txt` and the summary will be saved in `summary.txt`.
 - you can change the prompt in the `app.py` to have a better use of ai api.
+
+## references
+
+- [BILIBILI 字幕提取教程简略版](https://www.cnblogs.com/apachecn/p/18415093)
+- [Bilibili BV号获取AID和CID接口免费使用 - FreeJK免费API](https://freejk.com/api/24)
